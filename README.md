@@ -1,24 +1,20 @@
-# 🎓 OOP Enrollment System
+# OOP Enrollment System
 
-A Java-based system demonstrating **Object-Oriented Programming** principles to manage students and course registrations.
+### Author
+**Sam Abjelina** [GitHub Profile](https://github.com/SaaaaamAbje)
 
-## 📂 Quick Links to Code
-* [Main Entry Point](src/main/java/org/example/Main.java)
-* [Student Class Definition](src/main/java/org/example/Student.java)
-* [Course Class Definition](src/main/java/org/example/Course.java)
+---
 
-## 🏗️ System Architecture
-The project follows the **Encapsulation** principle by keeping data fields private and providing controlled access through getters and setters.
+##  Description
+This project is a Java-based **Student Enrollment System** built using Object-Oriented Programming (OOP) principles. It manages the relationship between students and their respective courses within an academic program.
 
+The system demonstrates key Java concepts:
+* **Encapsulation:** Using private fields with public getters and setters to protect data.
+* **Constructors:** Initializing objects with specific data (IDs, names, and programs).
+* **Class Interactions:** Structuring data models for `Student` and `Course` entities.
 
+---
 
-## 🛠️ How to Run
-1. Clone the repository:
-   `git clone https://github.com/SaaaaamAbje/OOPEnrollmentSystem.git`
-2. Open the project in [IntelliJ IDEA](https://www.jetbrains.com/idea/).
-3. Run the `Main.java` file.
+##  Screenshot
 
-## 🤝 Contact & Support
-If you have questions about this logic, feel free to reach out:
-* **GitHub:** [SaaaaamAbje](https://github.com/SaaaaamAbje)
-* **Email:** [YourEmail@example.com](mailto:YourEmail@example.com)
+*The image above shows the console output of the system running in IntelliJ IDEA.*
