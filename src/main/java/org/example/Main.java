@@ -19,7 +19,7 @@ public class Main {
         System.out.println("Program: " + student2.getProgram());
 
         System.out.println("---------------------------");
-        // 3. Create a course (Note: Course needs 3 arguments: ID, Name, and Program)
+
         Course course = new Course("100183", "Information Management", "IT");
 
         System.out.println("Course ID: " + course.getCourseID());
