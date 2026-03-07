@@ -1,21 +1,25 @@
 package org.example;
 
-public class Student {
-    private String studentID;
-    private String studentName;
+public class Student extends Person {
+
     private String program;
 
-    public Student(String studentID, String studentName, String program) {
-        this.studentID = studentID;
-        this.studentName = studentName;
+    public Student(String id, String name, String program) {
+        super(id, name);
         this.program = program;
     }
 
-    public String getStudentID() { return studentID; }
-    public String getStudentName() { return studentName; }
-    public String getProgram() { return program; }
+    // Getter: Retrieves the current program
+    public String getProgram() {
+        return program;
+    }
 
-    public void setStudentID(String studentID) { this.studentID = studentID; }
-    public void setStudentName(String studentName) { this.studentName = studentName; }
-    public void setProgram(String program) { this.program = program; }
+    // Setter: Updates the program (The "Correct" way)
+    public void setProgram(String program) {
+        if (program != null && !program.isEmpty()) {
+            this.program = program;
+        } else {
+            System.out.println("Error: Program name cannot be empty.");
+        }
+    }
 }
