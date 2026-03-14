@@ -4,7 +4,8 @@ import java.util.ArrayList;
 
 public class StudentRegistration {
 
-    private ArrayList<Student> studentList = new ArrayList<>();
+
+    private final ArrayList<Student> studentList = new ArrayList<>();
 
     public void saveStudent(Student student) {
         studentList.add(student);
@@ -12,13 +13,13 @@ public class StudentRegistration {
     }
 
     public void displayAllStudents() {
-
         System.out.println("\n--- Registered Students ---");
 
         for (Student s : studentList) {
+            // Updated to match the Person class method names
             System.out.println(
-                    "ID: " + s.getID() +
-                            " | Name: " + s.getName() +
+                    "ID: " + s.getPersonID() +
+                            " | Name: " + s.getPersonName() +
                             " | Program: " + s.getProgram()
             );
         }

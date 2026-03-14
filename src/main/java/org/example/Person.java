@@ -1,31 +1,34 @@
 package org.example;
 
-public class Person {
 
-    private String id;
-    private String name;
+public abstract class Person {
 
+    private String personID;
+    private String personName;
 
-    public Person(String id, String name) {
-        this.id = id;
-        this.name = name;
+    public Person(String personID, String personName) {
+        this.personID = personID;
+        this.personName = personName;
     }
 
 
-    public String getID() {
-        return id;
+    public String getPersonID() {
+        return personID;
     }
 
-    public String getName() {
-        return name;
+    public String getPersonName() {
+        return personName;
     }
 
 
-    public void setID(String id) {
-        this.id = id;
+    public void setPersonID(String personID) {
+        this.personID = personID;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setPersonName(String personName) {
+        this.personName = personName;
     }
+
+
+    public abstract void mainTask();
 }
